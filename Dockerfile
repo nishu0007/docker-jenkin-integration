@@ -5,3 +5,4 @@ RUN apt-get install curl -y
 RUN apt-get install nginx -y
 RUN service nginx start
 RUN service nginx enable
+ENTRYPOINT service nginx start && /bin/bash
